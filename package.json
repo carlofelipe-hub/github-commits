@@ -1,0 +1,25 @@
+{
+  "name": "github-commits",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Small GraphQL backend that fetches GitHub contribution/commit data for portfolios",
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0",
+    "graphql-yoga": "^5.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
